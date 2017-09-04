@@ -47,12 +47,27 @@
         "type": "scenario",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests/step_definitions/hooks.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 9,
             "name": "I am the Khaleesi of the Great Grass Sea",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:6"
+            },
             "result": {
-              "status": "undefined"
+              "status": "pending",
+              "duration": 1
             }
           },
           {
@@ -60,17 +75,23 @@
             "keyword": "And ",
             "line": 10,
             "name": "I have 3 dragon eggs",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:11"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 11,
-            "name": "I put them on funeral pyre",
+            "name": "I put eggs on funeral pyre",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:16"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             }
           },
           {
@@ -78,8 +99,11 @@
             "keyword": "And ",
             "line": 12,
             "name": "I set the fire",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:21"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             }
           },
           {
@@ -87,8 +111,11 @@
             "keyword": "And ",
             "line": 13,
             "name": "I wait some time",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:26"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             }
           },
           {
@@ -96,8 +123,22 @@
             "keyword": "Then ",
             "line": 14,
             "name": "I have 3 young dragons",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:31"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests/step_definitions/hooks.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1901
             }
           }
         ]
@@ -128,30 +169,60 @@
         "type": "scenario",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests/step_definitions/hooks.js:9"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 18,
             "name": "I am the queen of Vesteros",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:36"
+            },
             "result": {
-              "status": "undefined"
+              "status": "pending"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 19,
-            "name": "I hit the ‘Lannister’s family",
+            "name": "I hit the 'Lannister' family",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:41"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "it breaks",
+            "name": "The 'Lannister' family breaks",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:46"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests/step_definitions/hooks.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1428
             }
           }
         ]
@@ -182,30 +253,60 @@
         "type": "scenario",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests/step_definitions/hooks.js:9"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 18,
             "name": "I am the queen of Vesteros",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:36"
+            },
             "result": {
-              "status": "undefined"
+              "status": "pending"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 19,
-            "name": "I hit the ‘Baratheon’s family",
+            "name": "I hit the 'Baratheon' family",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:41"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "it breaks",
+            "name": "The 'Baratheon' family breaks",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:46"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests/step_definitions/hooks.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1407
             }
           }
         ]
@@ -236,30 +337,60 @@
         "type": "scenario",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests/step_definitions/hooks.js:9"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 18,
             "name": "I am the queen of Vesteros",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:36"
+            },
             "result": {
-              "status": "undefined"
+              "status": "pending"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 19,
-            "name": "I hit the ‘Stark’s family",
+            "name": "I hit the 'Stark' family",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:41"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "it breaks",
+            "name": "The 'Stark' family breaks",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:46"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests/step_definitions/hooks.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1389
             }
           }
         ]
@@ -290,30 +421,60 @@
         "type": "scenario",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests/step_definitions/hooks.js:9"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 18,
             "name": "I am the queen of Vesteros",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:36"
+            },
             "result": {
-              "status": "undefined"
+              "status": "pending"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 19,
-            "name": "I hit the ‘Tyrell’s family",
+            "name": "I hit the 'Tyrell' family",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:41"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "it breaks",
+            "name": "The 'Tyrell' family breaks",
+            "match": {
+              "location": "tests/step_definitions/browser_steps.js:46"
+            },
             "result": {
-              "status": "undefined"
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests/step_definitions/hooks.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1427
             }
           }
         ]
