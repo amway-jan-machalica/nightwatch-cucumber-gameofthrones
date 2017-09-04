@@ -22,3 +22,9 @@ npm run
 
 ## Running the tests
 npm test
+
+## And now
+
+Go to http://gameofthrones.lvh.me:3000/testexpress
+
+Checkout first step with git.
