@@ -25,6 +25,8 @@ npm test
 
 ## And now
 
-Go to http://gameofthrones.lvh.me:3000/testexpress
+Go to http://gameofthrones.lvh.me:3000/testexpress - assuming you're on local,
+
+or http://10.1.2.10:3000/testexpress - for Vagrant users
 
 Checkout first step with git.
