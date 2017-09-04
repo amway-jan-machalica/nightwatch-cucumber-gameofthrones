@@ -17,7 +17,6 @@ module.exports = {
   disable_colors: false,
   "test_settings": {
     "default": {
-      appEntryPoint: "http://10.1.2.10:3000",
       selenium_port: 4444,
       selenium_host: '127.0.0.1',
       screenshots: {
