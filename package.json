@@ -1,0 +1,21 @@
+{
+  "name": "nightwatch-cucumber-gameofthrones",
+  "version": "1.0.0",
+  "description": "This is the demo app for NightwatchJS + CucumberJS testing course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/johnycash/nightwatch-cucumber-gameofthrones.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/johnycash/nightwatch-cucumber-gameofthrones#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "express-hbs": "^1.0.4"
+  }
+}
