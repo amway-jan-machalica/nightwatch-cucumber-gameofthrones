@@ -13,11 +13,11 @@ require('nightwatch-cucumber')({
 module.exports = {
   "output_folder": "./reports",
   custom_assertions_path: './tests/assertions',
-  live_output: false,
+  live_output: true,
   disable_colors: false,
   "test_settings": {
     "default": {
-      appEntryPoint: "http://gameofthrones.lvh.me:3000",
+      appEntryPoint: "http://10.1.2.10:3000",
       selenium_port: 4444,
       selenium_host: '127.0.0.1',
       screenshots: {
