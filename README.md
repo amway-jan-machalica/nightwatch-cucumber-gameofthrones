@@ -18,7 +18,7 @@ npm install
 vagrant up
 
 ## Runnig the server
-npm run
+npm start
 
 ## Running the tests
 npm test
