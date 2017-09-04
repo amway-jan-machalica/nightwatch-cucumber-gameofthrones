@@ -1,0 +1,323 @@
+[
+  {
+    "description": "    As a Daenerys Targaryen\n    I want to break the wheel\n    So my subjects are not being crushed anymore",
+    "keyword": "Feature",
+    "name": "Game of Thrones",
+    "line": 2,
+    "id": "game-of-thrones",
+    "tags": [
+      {
+        "name": "@hbo",
+        "line": 1
+      },
+      {
+        "name": "@series",
+        "line": 1
+      },
+      {
+        "name": "@fantasy",
+        "line": 1
+      }
+    ],
+    "uri": "tests/features/GameOfThrones.feature",
+    "elements": [
+      {
+        "id": "game-of-thrones;i-am-the-mother-of-the-dragons",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "I am the mother of the dragons",
+        "tags": [
+          {
+            "name": "@hbo",
+            "line": 1
+          },
+          {
+            "name": "@series",
+            "line": 1
+          },
+          {
+            "name": "@fantasy",
+            "line": 1
+          },
+          {
+            "name": "@essos",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am the Khaleesi of the Great Grass Sea",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I have 3 dragon eggs",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I put them on funeral pyre",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I set the fire",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I wait some time",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I have 3 young dragons",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      },
+      {
+        "id": "game-of-thrones;i-break-the-spokes-one-by-one",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "I break the spokes one by one",
+        "tags": [
+          {
+            "name": "@hbo",
+            "line": 1
+          },
+          {
+            "name": "@series",
+            "line": 1
+          },
+          {
+            "name": "@fantasy",
+            "line": 1
+          },
+          {
+            "name": "@vesteros",
+            "line": 16
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I am the queen of Vesteros",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I hit the ‘Lannister’s family",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "it breaks",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      },
+      {
+        "id": "game-of-thrones;i-break-the-spokes-one-by-one",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "I break the spokes one by one",
+        "tags": [
+          {
+            "name": "@hbo",
+            "line": 1
+          },
+          {
+            "name": "@series",
+            "line": 1
+          },
+          {
+            "name": "@fantasy",
+            "line": 1
+          },
+          {
+            "name": "@vesteros",
+            "line": 16
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I am the queen of Vesteros",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I hit the ‘Baratheon’s family",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "it breaks",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      },
+      {
+        "id": "game-of-thrones;i-break-the-spokes-one-by-one",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "I break the spokes one by one",
+        "tags": [
+          {
+            "name": "@hbo",
+            "line": 1
+          },
+          {
+            "name": "@series",
+            "line": 1
+          },
+          {
+            "name": "@fantasy",
+            "line": 1
+          },
+          {
+            "name": "@vesteros",
+            "line": 16
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I am the queen of Vesteros",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I hit the ‘Stark’s family",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "it breaks",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      },
+      {
+        "id": "game-of-thrones;i-break-the-spokes-one-by-one",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "I break the spokes one by one",
+        "tags": [
+          {
+            "name": "@hbo",
+            "line": 1
+          },
+          {
+            "name": "@series",
+            "line": 1
+          },
+          {
+            "name": "@fantasy",
+            "line": 1
+          },
+          {
+            "name": "@vesteros",
+            "line": 16
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I am the queen of Vesteros",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I hit the ‘Tyrell’s family",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "it breaks",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
