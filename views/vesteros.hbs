@@ -1,1 +1,21 @@
 <p>So we have some great families here!</p>
+
+<ul class="families">
+  {{#each families}}
+  <li class="{{lowerCase this}} family">{{this}}</li>
+  {{/each}}
+</ul>
+
+<script>
+  $(function() {
+    $('ul.families').on("click", "li.family", function(e){
+      $(this).addClass('broken');
+    });
+  });
+</script>
+
+<style>
+  .family { cursor: url('/assets/sword.png') 100 1, pointer;}
+  .family.broken { background-color: black; color: white; }
+  .family.broken::after { content: " - dead" }
+</style>
