@@ -10,7 +10,7 @@ defineSupportCode(function ({Given, When, Then}) {
     return client
       .url(launch_url + '/essos')
       .then(() => {
-       return client.assert.title('Game of Thrones universe');
+       return client.assert.title('Game of Thrones universe - Essos');
       }) 
       .then(() => {
         return client.pause(500);
@@ -47,21 +47,21 @@ defineSupportCode(function ({Given, When, Then}) {
      return client
       .url(launch_url + '/vesteros')
       .then(() => {
-         return client.assert.title('Game of Thrones universe');
+         return client.assert.title('Game of Thrones universe - Vesteros');
       }) 
       .then(() => {
         return client.pause(500);
       });
   });
 
-  When(/^I hit the ['](.*)['] family$/, function (familyName, callback) {
-    // Write code here that turns the phrase above into concrete actions
-    callback(null, 'pending');
+  When(/^I hit the ['](.*)['] family$/, function (familyName) {
+    return client
+      .click('.family.' + familyName.toLowerCase());
   });
 
-  Then(/^The ['](.*)['] family breaks$/, function (familyName, callback) {
-    // Write code here that turns the phrase above into concrete actions
-    callback(null, 'pending');
+  Then(/^The ['](.*)['] family breaks$/, function (familyName) {
+    return client
+      .expect.element('.family.' + familyName.toLowerCase()).to.have.attribute('class').which.contains('broken');
   });
 
 });
