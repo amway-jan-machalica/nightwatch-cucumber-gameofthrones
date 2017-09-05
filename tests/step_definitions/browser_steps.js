@@ -23,7 +23,7 @@ defineSupportCode(function ({Given, When, Then}) {
     callback(null, 'pending');
   });
 
-  When('I put eggs on funeral pyre', function (callback) {
+  When('I put all eggs on funeral pyre', function (callback) {
     // Write code here that turns the phrase above into concrete actions
     callback(null, 'pending');
   });
@@ -33,9 +33,9 @@ defineSupportCode(function ({Given, When, Then}) {
     callback(null, 'pending');
   });
 
-  When('I wait some time', function (callback) {
-    // Write code here that turns the phrase above into concrete actions
-    callback(null, 'pending');
+  When('I wait some time', function () {
+    return client
+      .pause(5000);
   });
 
   Then('I have {int} young dragons', function (dragonsCount, callback) {

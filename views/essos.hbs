@@ -1,1 +1,91 @@
 <p>When the sun rises in the west and sets in the east, when the seas go dry and mountains blow in the wind like leaves. When my womb quickens again, and I bear a living child. Then you will return, my sun-and-stars, and not before.</p>
+
+<div class="eggbox">
+  <h4>Box</h4>
+  <button class="btn btn-info create-egg">Put an egg</button>
+  <iframe style=" width: 560px; height: 315px; margin-top: 10px;" src="https://www.youtube.com/embed/hlqU5aszCJs?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="pyre">
+  <h4>Pyre</h4>
+  <button class="btn btn-danger setfire">Set the fire</button>
+</div>
+
+<style>
+  .eggbox, .pyre {
+    border: 1px solid black;
+    width: 570px;
+    height: 570px;
+    float: left;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+  }
+  
+  .egg {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    width: 100px;
+    height: 100px;
+    float: right;
+    /* https://cache.popcultcha.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/g/r/green-egg-paper-weight-01.png */
+    background-image: url('/assets/egg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .dragon {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    width: 200px;
+    height: 200px;
+    float: right;
+    /* Https://t00.deviantart.net/Z7uGsLCXHcFBhPvj1UDqZ558VSo=/300x200/filters:fixed_height(100,100):origin()/pre14/c44a/th/pre/i/2016/356/5/0/httyd___toothless__redone_by_inh99-dasiyt7.jpg */
+    background-image: url('/assets/dragon.jpg');
+  }
+  
+  .pyre.onfire {
+    background-color: orange;
+    /* http://www.gifstop.com/images/backgrounds/firebackground.gif */
+    background-image: url('/assets/fire.gif'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+</style>
+
+<script>
+  $('.create-egg').click(function(e) {
+    $('.eggbox iframe').remove();
+    var newEgg = $($('script#eggtemplate').text());
+    newEgg.attr('id', 'egg' + Date.now());
+    $('.eggbox').append(newEgg);
+  });
+  
+  $('.setfire').click(function() {
+    $('.setfire').remove();
+    $('.pyre').addClass('onfire');
+    setTimeout(function(){
+      $('.pyre').removeClass('onfire');
+      $('.pyre .egg').removeClass('egg').addClass('dragon');
+    }, 3000);
+  });
+  
+  $('body').on('dragstart', '.egg', function(e){
+    e.originalEvent.dataTransfer.setData("transferId", $(e.target).attr('id'))
+  })
+  
+  $('.pyre').on('dragover', function(e) {
+    e.preventDefault();
+  })
+  
+  $('.pyre').on('drop', function(e){
+    e.preventDefault();
+    var data = e.originalEvent.dataTransfer.getData("transferId");
+    $(e.target).append($('#' + data));
+  })
+</script>
+
+<script id="eggtemplate" type="template/html">
+  <div class="egg" draggable="true"></div>
+</script>
