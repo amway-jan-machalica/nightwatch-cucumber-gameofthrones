@@ -15,8 +15,10 @@ module.exports = {
   custom_assertions_path: './tests/assertions',
   live_output: true,
   disable_colors: false,
+  test_workers: false,
   "test_settings": {
     "default": {
+      launch_url: 'http://10.1.2.10:3000',
       selenium_port: 4444,
       selenium_host: '127.0.0.1',
       screenshots: {
@@ -42,6 +44,20 @@ module.exports = {
           "webdriver.chrome.driver": BINPATH + "/chromedriver"
         }
       }
+    },
+    "chrome": {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        javascriptEnabled: true,
+        acceptSslCerts: true
+      },
+    },
+    "firefox": {
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        javascriptEnabled: true,
+        acceptSslCerts: true
+      },
     }
   }
 }

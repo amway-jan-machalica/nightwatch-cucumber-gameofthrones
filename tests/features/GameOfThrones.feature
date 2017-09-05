@@ -8,7 +8,7 @@
   Scenario: I am the mother of the dragons
     Given I am the Khaleesi of the Great Grass Sea
     And I have 3 dragon eggs
-    When I put all eggs on funeral pyre
+    When I put 3 eggs on funeral pyre
     And I set the fire
     And I wait some time
     Then I have 3 young dragons

@@ -19,9 +19,10 @@
     "express": "^4.15.4",
     "express-hbs": "^1.0.4"
   },
-   "devDependencies": {
+  "devDependencies": {
     "cucumber": "^3.0.0",
     "cucumber-html-reporter": "^3.0.1",
+    "html-dnd": "^1.2.0",
     "mime-types": "^2.1.13",
     "nightwatch": "^0.9.9",
     "nightwatch-cucumber": "^8.0.1",
