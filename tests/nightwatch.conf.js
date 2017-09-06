@@ -25,10 +25,10 @@ module.exports = {
                 path: SCREENSHOT_PATH
             },
             globals: {
-                "waitForConditionTimeout": 5000
+                waitForConditionTimeout: 5000
             },
             desiredCapabilities: {
-                "browserName": "chrome",
+                browserName: "chrome",
                 javascriptEnabled: true,
                 acceptSslCerts: true
             },
