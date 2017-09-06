@@ -33,4 +33,13 @@ Go to http://gameofthrones.lvh.me:3000/testexpress - assuming you're on local,
 
 or http://10.1.2.10:3000/testexpress - for Vagrant users
 
+Execute tests, by typing
+
+npm test
+
+So you can see the results.
+
+- check tests/nightwatch.conf.js
+- check package.json
+
 Checkout first step with git.
