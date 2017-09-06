@@ -11,6 +11,10 @@ At this level all you need is clean clone of the repo, and, of course, nodeJS in
 
 ## Setting things up
 
+vagrant plugin install vagrant-vbguest
+
+---then---
+
 npm install
 
 ---or---
