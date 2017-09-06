@@ -16,47 +16,49 @@ module.exports = {
     live_output: true,
     disable_colors: false,
     test_workers: false,
-    default: {
-        launch_url: 'http://10.1.2.10:3000',
-        selenium_port: 4444,
-        selenium_host: '127.0.0.1',
-        screenshots: {
-            enabled: true,
-            on_failure: true,
-            path: SCREENSHOT_PATH
-        },
-        globals: {
-            waitForConditionTimeout: 5000
-        },
-        desiredCapabilities: {
-            browserName: "chrome",
-            javascriptEnabled: true,
-            acceptSslCerts: true
-        },
-        selenium: {
-            start_process: true,
-            server_path: BINPATH + "/selenium.jar",
-            log_path: '',
-            host: "127.0.0.1",
-            port: 4444,
-            cli_args: {
-                "webdriver.chrome.driver": BINPATH + "/chromedriver"
+    test_settings: {
+        default: {
+            launch_url: 'http://10.1.2.10:3000',
+            selenium_port: 4444,
+            selenium_host: '127.0.0.1',
+            screenshots: {
+                enabled: true,
+                on_failure: true,
+                path: SCREENSHOT_PATH
+            },
+            globals: {
+                waitForConditionTimeout: 5000
+            },
+            desiredCapabilities: {
+                browserName: "chrome",
+                javascriptEnabled: true,
+                acceptSslCerts: true
+            },
+            selenium: {
+                start_process: true,
+                server_path: BINPATH + "/selenium.jar",
+                log_path: '',
+                host: "127.0.0.1",
+                port: 4444,
+                cli_args: {
+                    "webdriver.chrome.driver": BINPATH + "/chromedriver"
+                }
             }
+        },
+        chrome: {
+            desiredCapabilities: {
+                browserName: "chrome",
+                javascriptEnabled: true,
+                acceptSslCerts: true
+            },
+        },
+        firefox: {
+            desiredCapabilities: {
+                browserName: "firefox",
+                javascriptEnabled: true,
+                acceptSslCerts: true
+            },
         }
-    },
-    chrome: {
-        desiredCapabilities: {
-            browserName: "chrome",
-            javascriptEnabled: true,
-            acceptSslCerts: true
-        },
-    },
-    firefox: {
-        desiredCapabilities: {
-            browserName: "firefox",
-            javascriptEnabled: true,
-            acceptSslCerts: true
-        },
     }
 };
 
