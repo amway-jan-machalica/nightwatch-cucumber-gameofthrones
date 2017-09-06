@@ -6,22 +6,22 @@ defineSupportCode(function ({Given, When, Then}) {
 
     Given('I am the Khaleesi of the Great Grass Sea', function () {
 
-        return client
-      .resizeWindow(1920, 1080)
-      .url(client.launch_url + '/essos')
-            .then(() => {
-                return client.assert.title('Game of Thrones universe - Essos');
-            })
-            .then(() => {
-        return client.pause(100);
-            });
+      return client
+        .resizeWindow(1920, 1080)
+        .url(client.launch_url + '/essos')
+        .then(() => {
+          return client.assert.title('Game of Thrones universe - Essos');
+        })
+        .then(() => {
+          return client.pause(100);
+        });
 
     });
 
   Given('I have {int} dragon eggs', function (eggNumber) {
     var commandChain = client;
     var eggCounter = eggNumber;
-    
+
     while(eggCounter--) {
       commandChain = commandChain.click('.createEgg');
     }
@@ -40,7 +40,7 @@ defineSupportCode(function ({Given, When, Then}) {
     while(eggCounter--) {
       commandChain = commandChain.execute(dragAndDrop, ['.eggbox .egg', '.pyre']);
     }
-    
+
     return commandChain
       .expect.element('.pyre .egg:nth-of-type(' + eggNumber + ')').to.be.visible.before(7500)
       .then(() => {
@@ -69,13 +69,13 @@ defineSupportCode(function ({Given, When, Then}) {
 
     Given('I am the queen of Vesteros', function () {
         return client
-    .resizeWindow(1920, 1080)
-      .url(client.launch_url + '/vesteros')
+            .resizeWindow(1920, 1080)
+            .url(client.launch_url + '/vesteros')
             .then(() => {
                 return client.assert.title('Game of Thrones universe - Vesteros');
             })
             .then(() => {
-        return client.pause(100);
+                return client.pause(100);
             });
     });
 
