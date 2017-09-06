@@ -29,7 +29,7 @@ module.exports = {
             waitForConditionTimeout: 5000
         },
         desiredCapabilities: {
-            browserName: chrome,
+            browserName: "chrome",
             javascriptEnabled: true,
             acceptSslCerts: true
         },
@@ -58,9 +58,7 @@ module.exports = {
             acceptSslCerts: true
         },
     }
-}
-}
-;
+};
 
 require('fs').stat(BINPATH + 'selenium.jar', function (err, stat) { // got it?
     if (err || !stat || stat.size < 1) {
