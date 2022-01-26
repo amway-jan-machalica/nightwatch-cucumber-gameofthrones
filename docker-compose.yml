@@ -1,0 +1,21 @@
+version: '3'
+services:
+    nodejs:
+        container_name: gameofthrones_app
+        image: node:17
+        command: ./runapp.sh
+        ports:
+            - "3000:3000"
+        volumes:
+            - .:/home/node/gameofthrones
+        working_dir: /home/node/gameofthrones
+        networks:
+            app_net:
+                ipv4_address: 10.1.2.10
+networks:
+    app_net:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+                -   subnet: 10.1.2.0/24
