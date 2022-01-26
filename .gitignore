@@ -1,0 +1,5 @@
+node_modules
+.vagrant
+*.log
+reports/*
+screenshots/*
