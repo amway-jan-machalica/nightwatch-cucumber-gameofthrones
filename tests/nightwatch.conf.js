@@ -20,7 +20,7 @@ module.exports = {
         default: {
             launch_url: 'http://10.1.2.10:3000',
             selenium_port: 4444,
-            selenium_host: '127.0.0.1',
+            selenium_host: '10.1.2.13',
             screenshots: {
                 enabled: true,
                 on_failure: true,
@@ -35,14 +35,14 @@ module.exports = {
                 acceptSslCerts: true
             },
             selenium: {
-                start_process: true,
-                server_path: BINPATH + "/selenium.jar",
+                start_process: false,
+                //server_path: BINPATH + "/selenium.jar",
                 log_path: '',
-                host: "127.0.0.1",
+                host: '10.1.2.13',
                 port: 4444,
-                cli_args: {
-                    "webdriver.chrome.driver": BINPATH + "/chromedriver"
-                }
+                //cli_args: {
+                //    "webdriver.chrome.driver": BINPATH + "/chromedriver"
+                //}
             }
         },
         chrome: {
